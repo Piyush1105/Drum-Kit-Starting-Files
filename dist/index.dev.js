@@ -1,6 +1,7 @@
 "use strict";
 
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
+  //when button is clicked
   var whenClicked = function whenClicked() {
     var buttonInnerHtml = this.innerHTML;
     makeSound(buttonInnerHtml); //what to do on click?
@@ -11,10 +12,11 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
   ;
 }
 
-;
+; //which key is pressed in whole document?
+
 document.addEventListener("keypress", function (event) {
   makeSound(event.key);
-});
+}); //when key is pressed on keyboard
 
 function makeSound(key) {
   switch (key) {

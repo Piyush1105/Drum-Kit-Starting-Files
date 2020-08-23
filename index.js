@@ -3,7 +3,7 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
     var l = document.querySelectorAll(".drum")[i];
     l.addEventListener("click", whenClicked);
 
-
+    //when button is clicked
     function whenClicked() {
         var buttonInnerHtml = this.innerHTML;
 
@@ -13,12 +13,13 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
     };
 };
 
-
+//which key is pressed in whole document?
 document.addEventListener("keypress", function(event) {
 
     makeSound(event.key);
 });
 
+//when key is pressed on keyboard
 function makeSound(key) {
     switch (key) {
         case "w":
