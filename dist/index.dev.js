@@ -61,7 +61,8 @@ function makeSound(key) {
     default:
       break;
   }
-}
+} //adding animations to the pressed button or from keyboard 
+
 
 function buttonAnimation(currentKey) {
   var activeButton = document.querySelector("." + currentKey);
